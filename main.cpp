@@ -18,9 +18,9 @@ struct Barbershop
 {
     public:
         Barbershop(): num_waiting(0), has_customers(true){};
-        condition_variable cv_barber; // ведет себя как секретарь в приемной
+        condition_variable cv_barber; // vedet sebya kak sekretar
         condition_variable cv_customer;
-        atomic<int> num_waiting; // число клиентов ждущих в приемной
+        atomic<int> num_waiting; // cislo jduwix klientov v priemnoy
         mutex cout_mtx;
         atomic<bool> has_customers;
 
